@@ -13,10 +13,14 @@ body {
 		"Open Sans",
 		"Helvetica Neue",
 		sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 }
 :root {
 	--section-padding: 30px 50px;
+}
+
+a {
+	color: inherit;
 }
 
 .container {
@@ -24,11 +28,11 @@ body {
 }
 
 .container > * {
-	flex: 2;
+	flex: 5;
 }
 
 .aside {
-	flex: 1;
+	flex: 3;
 	background-image: url(img/hero\ size\ 1.jpg);
 	background-size: cover;
 	width: 50%;
@@ -38,33 +42,30 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	border-image: fill 1
-		linear-gradient(rgba(20, 20, 20, 0.6), rgba(10, 10, 10, 0));
+		linear-gradient(rgba(20, 20, 20, 1), rgba(10, 10, 10, 0));
 }
 
 .logo {
-	background-color: rgba(3, 3, 3, 0.7);
-	padding: 10px;
+	background-color: rgba(3, 3, 3, 0.4);
+	padding: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
-	margin-top: 250px;
+	margin-top: 170px;
 	width: 100%;
 }
 
 .logo > h1 {
 	color: rgb(255, 255, 255);
-	font-size: 3.2rem;
+	font-size: 2.8rem;
 	margin: 0;
+	letter-spacing: 3px;
 }
 
 .attribution {
 	margin-bottom: 50px;
 	color: rgb(255, 255, 255);
-}
-
-.attribution a {
-	color: inherit;
 }
 
 .main {
@@ -74,19 +75,37 @@ body {
 	background-color: rgb(245, 245, 245);
 }
 
+.main > section {
+	padding: var(--section-padding);
+	font-size: 1.4rem;
+	font-weight: 500;
+	max-inline-size: 64ch;
+}
+
+.main > section > p {
+	margin: 10px 0 0 0;
+}
 .form > .flex-container {
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0 0 2px rgba(25, 25, 25, 0.089);
 	border: none;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 20px 40px;
 	padding: var(--section-padding);
+	margin: 0;
 }
 
 .input-container {
-	flex-basis: 500px;
+	flex-basis: 400px;
 	gap: 10px;
+}
+
+.input-container > label {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 0.8rem;
+	font-weight: 500;
 }
 
 .form h2 {
@@ -99,8 +118,37 @@ body {
 .form input {
 	width: 100%;
 	padding: 10px 15px;
+	font-size: inherit;
 }
 
 .form > section {
 	padding: var(--section-padding);
+}
+
+.form > section a {
+	color: rgb(19, 129, 189);
+}
+
+.login button {
+	padding: 12px 15px;
+	border: none;
+	background-color: rgb(19, 129, 189);
+	color: white;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+.form input,
+button {
+	border: rgb(220, 220, 220) 1.6px solid;
+	font-family: inherit;
+}
+
+.form input[type="password"]:invalid {
+	border: rgb(255, 85, 85) 1.6px solid;
+}
+
+.form input:focus {
+	outline: 1px;
+	border: rgb(19, 129, 189) 1.6px solid;
 }
