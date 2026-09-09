@@ -13,6 +13,10 @@ body {
 		"Open Sans",
 		"Helvetica Neue",
 		sans-serif;
+	font-size: 18px;
+}
+:root {
+	--section-padding: 30px 50px;
 }
 
 .container {
@@ -48,7 +52,7 @@ body {
 	width: 100%;
 }
 
-.logo h1 {
+.logo > h1 {
 	color: rgb(255, 255, 255);
 	font-size: 3.2rem;
 	margin: 0;
@@ -61,4 +65,42 @@ body {
 
 .attribution a {
 	color: inherit;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgb(245, 245, 245);
+}
+
+.form > .flex-container {
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 0 2px rgba(25, 25, 25, 0.089);
+	border: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: var(--section-padding);
+}
+
+.input-container {
+	flex-basis: 500px;
+	gap: 10px;
+}
+
+.form h2 {
+	flex-basis: 100%;
+	display: flex;
+	gap: 10px;
+	margin: 0;
+}
+
+.form input {
+	width: 100%;
+	padding: 10px 15px;
+}
+
+.form > section {
+	padding: var(--section-padding);
 }

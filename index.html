@@ -46,57 +46,75 @@
 					</p>
 					<p>You know you want to.</p>
 				</section>
-				<form action="#" method="get">
-					<fieldset>
-						<legend>Let's do this</legend>
-						<label for="name-first">First Name</label>
-						<input
-							type="text"
-							id="name-first"
-							name="name-last"
-							required
-						/>
-						<label for="name-last">Last Name</label>
-						<input
-							type="text"
-							id="name-last"
-							name="name-last"
-							required
-						/>
-						<label for="email">Email</label>
-						<input
-							type="email"
-							placeholder="name@example.com"
-							id="email"
-							name="email"
-							required
-						/>
-						<label for="phone">Phone</label>
-						<input
-							type="tel"
-							pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-							maxlength="12"
-							placeholder="123-456-7890"
-							id="phone"
-							name="phone"
-							required
-						/>
-						<label for="password">Password</label>
-						<input
-							type="password"
-							id="password"
-							minlength="8"
-							required
-						/>
-						<label for="password-confirm">Confirm password</label>
-						<input
-							type="password"
-							id="password-confirm"
-							name="password"
-							minlength="8"
-							required
-						/>
+				<form action="#" method="get" class="form">
+					<fieldset class="flex-container">
+						<h2>Let'do this</h2>
+						<div class="input-container">
+							<label for="name-first">First Name</label>
+							<input
+								type="text"
+								id="name-first"
+								name="name-last"
+								required
+							/>
+						</div>
+						<div class="input-container">
+							<label for="name-last">Last Name</label>
+							<input
+								type="text"
+								id="name-last"
+								name="name-last"
+								required
+							/>
+						</div>
+						<div class="input-container">
+							<label for="email">Email</label>
+							<input
+								type="email"
+								placeholder="name@example.com"
+								id="email"
+								name="email"
+								required
+							/>
+						</div>
+						<div class="input-container">
+							<label for="phone">Phone</label>
+							<input
+								type="tel"
+								pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+								maxlength="12"
+								placeholder="123-456-7890"
+								id="phone"
+								name="phone"
+								required
+							/>
+						</div>
+						<div class="input-container">
+							<label for="password">Password</label>
+							<input
+								type="password"
+								id="password"
+								minlength="8"
+								required
+							/>
+						</div>
+						<div class="input-container">
+							<label for="password-confirm"
+								>Confirm password</label
+							>
+							<input
+								type="password"
+								id="password-confirm"
+								name="password"
+								minlength="8"
+								required
+							/>
+						</div>
 					</fieldset>
+					<section class="login">
+						<button type="submit">Create Account</button>
+						<p>Already have an account? <a href="#">Log in</a></p>
+					</section>
 				</form>
 			</div>
 		</div>
