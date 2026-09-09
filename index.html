@@ -37,7 +37,68 @@
 					>
 				</span>
 			</div>
-			<div></div>
+			<div class="main">
+				<section>
+					<p>
+						This is not a real online service! You know you need
+						something like this in your life to help you realize
+						your deepest dreams. Sign up now to get started.
+					</p>
+					<p>You know you want to.</p>
+				</section>
+				<form action="#" method="get">
+					<fieldset>
+						<legend>Let's do this</legend>
+						<label for="name-first">First Name</label>
+						<input
+							type="text"
+							id="name-first"
+							name="name-last"
+							required
+						/>
+						<label for="name-last">Last Name</label>
+						<input
+							type="text"
+							id="name-last"
+							name="name-last"
+							required
+						/>
+						<label for="email">Email</label>
+						<input
+							type="email"
+							placeholder="name@example.com"
+							id="email"
+							name="email"
+							required
+						/>
+						<label for="phone">Phone</label>
+						<input
+							type="tel"
+							pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+							maxlength="12"
+							placeholder="123-456-7890"
+							id="phone"
+							name="phone"
+							required
+						/>
+						<label for="password">Password</label>
+						<input
+							type="password"
+							id="password"
+							minlength="8"
+							required
+						/>
+						<label for="password-confirm">Confirm password</label>
+						<input
+							type="password"
+							id="password-confirm"
+							name="password"
+							minlength="8"
+							required
+						/>
+					</fieldset>
+				</form>
+			</div>
 		</div>
 		<script src="script.js"></script>
 	</body>
