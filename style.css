@@ -144,7 +144,7 @@ button {
 	font-family: inherit;
 }
 
-.form input[type="password"]:invalid {
+.form input[type="password"]:user-invalid {
 	border: rgb(255, 85, 85) 1.6px solid;
 }
 
