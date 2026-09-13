@@ -150,5 +150,5 @@ button {
 
 .form input:focus {
 	outline: 1px;
-	border: rgb(19, 129, 189) 1.6px solid;
+	border: rgb(19, 129, 189) 1.6px solid !important;
 }
